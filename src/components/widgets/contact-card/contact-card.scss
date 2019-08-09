@@ -1,0 +1,150 @@
+.card {
+    padding: 1.75em;
+    box-shadow: 0 2px 0.35em rgba(0, 0, 0, 0.15);
+    border-radius: $cardRadius;
+    flex: 1;
+    display: flex;
+    margin: 0 $cardMargin;
+    background: $bgColor;
+    @include relative;
+    @include fit;
+}
+
+img {
+    &.dp {
+        display: block;
+        width: 100%;
+    }
+}
+
+#details, #image, #actions {
+    display: inline-flex;
+    vertical-align: top;
+}
+
+#details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: .5em 1.5em;
+}
+
+#actions {
+    width: 2em;
+    display: flex;
+    flex-direction: column;
+}
+
+#image {
+    width: 4em;
+    height: 4em;
+    background: $solidBg;
+    overflow: hidden;
+    border-radius: 4em;
+}
+
+#name, #phone {
+    background: $solidBg;
+    padding: .45em;
+    border-radius: 1em;
+    display: flex
+}
+
+#phone {
+    margin-top: 1em;
+    width: 25%;
+}
+
+.filled {
+    &.card {
+        padding: 1.5em 1em;
+        font-size: $fontSize * .8;
+    }
+
+     * {
+         vertical-align: top;
+     }
+
+    #image {
+        width: 6em;
+        height: 6em;
+    }
+
+    #details {
+        padding: 0 1.5em;
+    }
+
+    #name {
+        font-size: $fontSize * 1.1;
+        text-transform: capitalize;
+    }
+
+    #name, #phone, #email {
+        display: flex;
+        width: 100%;
+        padding: 0;
+        background: none;
+        padding-bottom: .75em;
+    }
+
+    #phone {
+        color: $highlightColor;
+        margin: 0;
+    }
+
+    #phone, #email {
+        font-weight: bold;
+    }
+
+    .icon {
+        margin-right: .5em;
+    }
+}
+
+.keyframe {
+    @include absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: inline-flex;
+    overflow: hidden;
+}
+
+@keyframes move {
+    from {
+        margin-left: 0;
+    }
+    to {
+        margin-left: 100%;
+    }
+}
+
+.keyframe:after {
+    content: "";
+    transform: rotate(-45deg);
+    animation: move 1s linear .5s infinite;
+    width: 75%;
+    height: 100%;
+    background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,0));
+}
+
+#country {
+    flex: 2;
+}
+
+#star {
+    flex: 1;
+}
+
+#country {
+    color: lighten($headerLink, 1%);
+}
+
+#star {
+    img {
+        vertical-align: bottom;
+    }
+}
+
+

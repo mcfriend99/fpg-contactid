@@ -1,0 +1,34 @@
+footer {
+    border-top: 1px solid rgba(0,0,0,.2);
+    padding: 1.5em;
+    display: flex;
+    flex-direction: row;
+}
+
+footer a, footer span {
+    color: $footerFontColor;
+}
+
+footer a {
+    margin: 0 1.5em;
+}
+
+footer span {
+    margin: 0 1em;
+}
+
+.container {
+    width: $containerWidth * 1.056;
+}
+
+footer div {
+    flex: 1;
+}
+
+.right {
+    @include text-right;
+}
+
+#copyright {
+    color: $accentColor;
+}

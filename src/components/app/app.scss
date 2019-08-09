@@ -1,0 +1,33 @@
+#app {
+    padding: 0;
+    position: relative;
+}
+
+#backdrop {
+    @include absolute;
+    top: 0;
+    height: 100vh;
+    left: 0;
+    right: 0;
+    background: $backdropColor;
+    z-index: 0;
+}
+
+#main {
+    z-index: 10;
+    @include relative;
+}
+
+.with-bg {
+    background: $backdropColor;
+}
+
+#modal-backdrop {
+    background: rgba(0,0,0,.75);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 400;
+}

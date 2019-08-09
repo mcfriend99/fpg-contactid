@@ -1,0 +1,27 @@
+@mixin  text-center {
+    text-align: center;
+}
+
+@mixin text-right {
+    text-align: right;
+}
+
+@mixin centerlize {
+    margin: 0 auto;
+}
+
+@mixin relative {
+    position: relative;
+}
+
+@mixin absolute {
+    position: absolute;
+}
+
+@mixin fit {
+    box-sizing: border-box;
+}
+
+@mixin cool-radius {
+    border-radius: $coolBorderRadius;
+}

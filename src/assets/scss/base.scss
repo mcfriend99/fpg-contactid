@@ -1,0 +1,49 @@
+@font-face {
+    src: url('../../assets/fonts/CircularStd-Book.otf');
+    font-family: $fontFamily;
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    src: url('../../assets/fonts/CircularStdBold.ttf');
+    font-family: $fontFamily;
+    font-style: normal;
+    font-weight: bold;
+}
+
+body {
+    margin: 0;
+    font-family: $fontFamily;
+    background: $bgColor;
+    font-size: $fontSize;
+}
+
+a {
+    text-decoration: none;
+}
+
+h3 {
+    font-size: 2em;
+    margin-top: 2em;
+    font-weight: bold;
+    margin-bottom: .25em;
+}
+
+.container {
+    width: $containerWidth;
+    margin: 0 auto;
+}
+
+.accent {
+    color: $accentColor;
+}
+
+.btn {
+    background: #ccc;
+    color: #fff !important;
+    padding: 1em 5em;
+    background: linear-gradient(45deg, #d64c6c, #c15591);
+    box-shadow: 0 0 1em rgba(0,0,0,.2);
+    border-radius: 2em;
+    display: inline-flex;
+}

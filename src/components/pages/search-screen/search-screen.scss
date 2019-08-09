@@ -1,0 +1,21 @@
+.content {
+    display: flex;
+    flex-direction: row;
+    @include relative;
+}
+
+#container {
+    width: $searchResultWidth;
+    @include centerlize;
+    padding-bottom: 10em;
+}
+
+strong {
+    margin: 3.5em 3em;
+    display: flex;
+    font-size: $fontSize * 1.025;
+}
+
+strong span {
+    color: $highlightColor;
+}

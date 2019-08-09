@@ -1,0 +1,59 @@
+#content {
+    background: url("../../../assets/images/bg-path.svg");
+    background-size: cover;
+    padding-bottom: 11em;
+    padding-top: 6em;
+}
+
+h3 {
+    @include text-center;
+    font-weight: normal;
+}
+
+#box {
+    padding: 3em 7em 9em 7em;
+    background: $bgColor;
+    box-shadow: 0 0 1em rgba(0,0,0,.15);
+    width: $containerWidth;
+    margin-top: 4em;
+    @include cool-radius;
+    @include fit;
+    @include centerlize;
+}
+
+#opt-container {
+    display: flex;
+    flex-direction: row;
+    padding-top: 4em;
+}
+
+.opt {
+    flex: 1;
+}
+
+.opt img {
+    max-width: 100%;
+    padding: 3.85em;
+    @include fit;
+}
+
+.opt .info {
+    margin: auto 2em;
+    font-size: $fontSize * 1.075;
+    font-weight: normal;
+    vertical-align: middle;
+    display: flex;
+}
+
+.opt span {
+    color: lighten($accentColor, 33%);
+    font-size: 4em;
+    vertical-align: middle;
+    line-height: 0.5;
+}
+
+.opt strong {
+    line-height: 1.5;
+    @include text-center;
+    padding-top: .5em;
+}

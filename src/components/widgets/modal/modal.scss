@@ -1,0 +1,111 @@
+#box {
+    background: $bgColor;
+    border-radius: $coolBorderRadius / 2;
+    z-index: 999;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    @include text-center;
+    width: 55%;
+}
+
+#dp {
+    margin-top: -5em;
+    border-radius: 10em;
+    width: 14em;
+}
+
+#content {
+    padding: 3em;
+    padding-bottom: 2.5em;
+}
+
+#name, #gender-age {
+    text-transform: capitalize;
+    line-height: 2;
+}
+
+#name {
+    font-size: $fontSize * 1.1;
+}
+
+#gender-age , #country{
+    font-size: $fontSize * .85;
+}
+
+#gender-age {
+    color: $highlightColor;
+}
+
+#country {
+    color: lighten($headerLink, 1%);
+}
+
+#contacts {
+    display: flex;
+    flex-direction: row;
+}
+
+#contacts {
+    padding: 2em 0;
+
+    div {
+        flex: 1;
+
+        .icon {
+            vertical-align: middle;
+            margin-right: .5em;
+        }
+
+        span {
+            vertical-align: middle;
+        }
+    }
+}
+
+#actions {
+    vertical-align: middle;
+    padding: 1.5em;
+    padding-bottom: 0;
+}
+
+.pure {
+    color: $highlightColor;
+    margin-right: 3em;
+    vertical-align: middle;
+
+    .icon {
+        margin-right: .5em;
+        vertical-align: middle;
+    }
+}
+
+.btn {
+    padding: .58em 1.25em;
+    background: lighten($accentColor, 5%);
+    box-shadow: none;
+    margin-right: 1em;
+    vertical-align: middle;
+
+    .icon {
+        margin-right: 1em;
+        vertical-align: middle;
+    }
+}
+
+#close {
+    width: 2em;
+    height: 2em;
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 1.5em;
+    position: fixed;
+    top: 2em;
+    right: 2em;
+    z-index: 1100;
+    text-align: center;
+
+    img {
+        margin-top: .5em;
+    }
+}
