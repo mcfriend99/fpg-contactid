@@ -20,7 +20,7 @@
                     </div>
                     <div v-if="$selectedContact.location !== ''">
                         <img class="icon" width="24px" src="../../../assets/images/address-icon.svg" />
-                        <span>{{ $selectedContact.location.street }}</span>
+                        <span>{{ $selectedContact.location.street.number }} {{ $selectedContact.location.street.name }}</span>
                     </div>
                 </div>
 
